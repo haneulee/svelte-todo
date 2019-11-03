@@ -18,7 +18,9 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --single",
-    "start:dev": "sirv public --single --dev"
+    "start:dev": "sirv public --single --dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
   },
   "homepage": "http://haneulee.github.io/svelte-app"
 }
